@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script>
+		function loadNewDoc() {
+			var loc = window.location;
+			if (zc.getURLParameters('user').toLowerCase().endsWith('@saintlukeskc.org')) {
+				window.location = "index-slhs.html" + loc.search;
+			} else {
+				window.location = "index-bjc.html" + loc.search;
+			}
+		};
+	</script>
+</head>
+
+<body onload="loadNewDoc()">
+</body>
+
+</html>
